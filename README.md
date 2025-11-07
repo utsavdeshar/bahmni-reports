@@ -14,7 +14,7 @@ Hosts the reports web application for the [Bahmni project](http://www.bahmni.org
 
 # Running Integration tests
 
-   1. Install MySQL client and server in your machine. If you already have a MySQL server available make sure that the user has the privileges to dump the database.
+   1. Install MySQL 5.7 client and server in your machine.If you already have a MySQL server available make sure that the user has the privileges to dump the database.
    2. Run: `./mvnw -DskipDump=false -DskipConfig=false clean package` (note this would trigger `scripts/create_configuration.sh` as part of test-compile and create respective test properties under `$HOME/.bahmni-reports/bahmni-reports-test.properties`. You can also explicitly run `scripts/create_configuration.sh` to create the properties (incase if you are using IDE to run the test)
    3. This should trigger all the tests including integration (it assumes jdbc:mysql://localhost:3306/reports_integration_tests as the DB URL)
 
