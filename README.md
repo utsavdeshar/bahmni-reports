@@ -1,4 +1,4 @@
-# Bahmni Reports docker push
+# Bahmni Reports docker
 
 Hosts the reports web application for the [Bahmni project](http://www.bahmni.org/)
 
